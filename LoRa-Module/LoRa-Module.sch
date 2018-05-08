@@ -1,0 +1,442 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Stride_Custom_Parts
+LIBS:SparkFun-RF
+LIBS:LoRa-Module-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74HC4050D U2
+U 1 1 5AF0F2D1
+P 5550 4300
+F 0 "U2" H 5400 4900 60  0000 C CNN
+F 1 "74HC4050D" H 5550 3900 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 5550 4300 60  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HC4050DB118/1727-2620-1-ND/6576031" H 5550 4300 60  0001 C CNN
+	1    5550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L AZ1117-3.3 U1
+U 1 1 5AF0F685
+P 5550 2850
+F 0 "U1" H 5400 2975 50  0000 C CNN
+F 1 "AZ1117-3.3" H 5550 2975 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 5550 3100 50  0001 C CIN
+F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/AZ1117EH-3.3TRG1/AZ1117EH-3.3TRG1DICT-ND/5001336" H 5550 2850 50  0001 C CNN
+	1    5550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 5AF0F72D
+P 6000 2950
+F 0 "C3" H 6010 3020 50  0000 L CNN
+F 1 "1uF" H 6010 2870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6000 2950 50  0001 C CNN
+F 3 "" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5AF0F77B
+P 5100 2950
+F 0 "C2" H 5110 3020 50  0000 L CNN
+F 1 "1uF" H 5110 2870 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 5100 2950 50  0001 C CNN
+F 3 "" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5AF0F7E0
+P 5550 3200
+F 0 "#PWR01" H 5550 2950 50  0001 C CNN
+F 1 "GND" H 5550 3050 50  0000 C CNN
+F 2 "" H 5550 3200 50  0001 C CNN
+F 3 "" H 5550 3200 50  0001 C CNN
+	1    5550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5AF0F7FE
+P 5000 4650
+F 0 "#PWR02" H 5000 4400 50  0001 C CNN
+F 1 "GND" H 5000 4500 50  0000 C CNN
+F 2 "" H 5000 4650 50  0001 C CNN
+F 3 "" H 5000 4650 50  0001 C CNN
+	1    5000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 5AF0F81B
+P 5050 2750
+F 0 "#PWR03" H 5050 2600 50  0001 C CNN
+F 1 "+5V" H 5050 2890 50  0000 C CNN
+F 2 "" H 5050 2750 50  0001 C CNN
+F 3 "" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR04
+U 1 1 5AF0F837
+P 6050 2750
+F 0 "#PWR04" H 6050 2600 50  0001 C CNN
+F 1 "+3V3" H 6050 2890 50  0000 C CNN
+F 2 "" H 6050 2750 50  0001 C CNN
+F 3 "" H 6050 2750 50  0001 C CNN
+	1    6050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5AF0F886
+P 5100 3100
+F 0 "#PWR05" H 5100 2850 50  0001 C CNN
+F 1 "GND" H 5100 2950 50  0000 C CNN
+F 2 "" H 5100 3100 50  0001 C CNN
+F 3 "" H 5100 3100 50  0001 C CNN
+	1    5100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5AF0F89D
+P 6000 3100
+F 0 "#PWR06" H 6000 2850 50  0001 C CNN
+F 1 "GND" H 6000 2950 50  0000 C CNN
+F 2 "" H 6000 3100 50  0001 C CNN
+F 3 "" H 6000 3100 50  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 5AF0F9C6
+P 4650 3900
+F 0 "C1" H 4660 3970 50  0000 L CNN
+F 1 "0.1uF" H 4660 3820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4650 3900 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR07
+U 1 1 5AF0F9FC
+P 4650 3700
+F 0 "#PWR07" H 4650 3550 50  0001 C CNN
+F 1 "+3V3" H 4650 3840 50  0000 C CNN
+F 2 "" H 4650 3700 50  0001 C CNN
+F 3 "" H 4650 3700 50  0001 C CNN
+	1    4650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5AF0FA5D
+P 4650 4050
+F 0 "#PWR08" H 4650 3800 50  0001 C CNN
+F 1 "GND" H 4650 3900 50  0000 C CNN
+F 2 "" H 4650 4050 50  0001 C CNN
+F 3 "" H 4650 4050 50  0001 C CNN
+	1    4650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2850 6050 2850
+Wire Wire Line
+	5050 2850 5250 2850
+Wire Wire Line
+	5000 4650 5000 4600
+Wire Wire Line
+	5000 4600 5100 4600
+Wire Wire Line
+	6050 2850 6050 2750
+Connection ~ 6000 2850
+Wire Wire Line
+	5050 2850 5050 2750
+Connection ~ 5100 2850
+Wire Wire Line
+	5550 3150 5550 3200
+Wire Wire Line
+	6000 3100 6000 3050
+Wire Wire Line
+	5100 3100 5100 3050
+Wire Wire Line
+	4650 3700 4650 3800
+Wire Wire Line
+	4650 3800 5100 3800
+Wire Wire Line
+	4650 4050 4650 4000
+Text Label 5100 4000 2    39   ~ 0
+SCK_5V
+Text Label 3800 4100 2    39   ~ 0
+RST_5V
+Text Label 5100 4200 2    39   ~ 0
+CS_5V
+Text Label 6000 3900 0    39   ~ 0
+MOSI_3V3
+Text Label 6000 4000 0    39   ~ 0
+SCK_3V3
+Text Label 6000 4100 0    39   ~ 0
+RST_3V3
+Text Label 5100 3900 2    39   ~ 0
+MOSI_5V
+Text Label 6000 4200 0    39   ~ 0
+CS_3V3
+$Comp
+L RFM69HCW U3
+U 1 1 5AF0FFFE
+P 7700 4200
+F 0 "U3" H 7300 4850 50  0000 L BNN
+F 1 "RFM98" H 7300 3575 50  0000 L BNN
+F 2 "SparkFun-RF:RFM69HCW-XXXS2" H 7730 4350 20  0001 C CNN
+F 3 "" H 7700 4200 39  0001 C CNN
+	1    7700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5AF10083
+P 8450 4700
+F 0 "#PWR09" H 8450 4450 50  0001 C CNN
+F 1 "GND" H 8450 4550 50  0000 C CNN
+F 2 "" H 8450 4700 50  0001 C CNN
+F 3 "" H 8450 4700 50  0001 C CNN
+	1    8450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4400 8450 4400
+Wire Wire Line
+	8450 4400 8450 4700
+Wire Wire Line
+	8300 4600 8450 4600
+Connection ~ 8450 4600
+$Comp
+L +3V3 #PWR010
+U 1 1 5AF100CF
+P 6950 3550
+F 0 "#PWR010" H 6950 3400 50  0001 C CNN
+F 1 "+3V3" H 6950 3690 50  0000 C CNN
+F 2 "" H 6950 3550 50  0001 C CNN
+F 3 "" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3700 6950 3700
+Wire Wire Line
+	6950 3700 6950 3550
+Text Label 7100 4100 2    39   ~ 0
+MOSI_3V3
+Text Label 7100 4600 2    39   ~ 0
+RST_3V3
+Text Label 7100 4200 2    39   ~ 0
+SCK_3V3
+Text Label 7100 4300 2    39   ~ 0
+CS_3V3
+Text Label 3800 3800 2    39   ~ 0
+MISO_3V3
+Text Label 8300 3700 0    39   ~ 0
+DIO0
+Text Label 8300 3800 0    39   ~ 0
+DIO1
+Text Label 8300 3900 0    39   ~ 0
+DIO2
+Text Label 8300 4000 0    39   ~ 0
+DIO3
+Text Label 8300 4100 0    39   ~ 0
+DIO4
+Text Label 8300 4200 0    39   ~ 0
+DIO5
+$Comp
+L Conn_Coaxial J3
+U 1 1 5AF1034F
+P 8800 4500
+F 0 "J3" H 8810 4620 50  0000 C CNN
+F 1 "Conn_Coaxial" V 8915 4500 50  0000 C CNN
+F 2 "Connectors_Amphenol:Amphenol_RF_SMA_132289" H 8800 4500 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/amphenol-rf-division/132289/ACX1426-ND/1989875" H 8800 4500 50  0001 C CNN
+	1    8800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4500 8650 4500
+$Comp
+L GND #PWR011
+U 1 1 5AF103E9
+P 8800 4700
+F 0 "#PWR011" H 8800 4450 50  0001 C CNN
+F 1 "GND" H 8800 4550 50  0000 C CNN
+F 2 "" H 8800 4700 50  0001 C CNN
+F 3 "" H 8800 4700 50  0001 C CNN
+	1    8800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 5AF105F1
+P 3600 3200
+F 0 "#PWR012" H 3600 3050 50  0001 C CNN
+F 1 "+5V" H 3600 3340 50  0000 C CNN
+F 2 "" H 3600 3200 50  0001 C CNN
+F 3 "" H 3600 3200 50  0001 C CNN
+	1    3600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x09 J1
+U 1 1 5AF1060C
+P 4000 3700
+F 0 "J1" H 4000 4200 50  0000 C CNN
+F 1 "Conn_01x09" H 4000 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3300 3800 3300
+Wire Wire Line
+	3600 3300 3600 3200
+$Comp
+L GND #PWR013
+U 1 1 5AF10737
+P 3600 3400
+F 0 "#PWR013" H 3600 3150 50  0001 C CNN
+F 1 "GND" H 3600 3250 50  0000 C CNN
+F 2 "" H 3600 3400 50  0001 C CNN
+F 3 "" H 3600 3400 50  0001 C CNN
+	1    3600 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3400 3600 3400
+Text Label 3800 3600 2    39   ~ 0
+DIO0
+Text Label 3800 3700 2    39   ~ 0
+SCK_5V
+Text Label 3800 3900 2    39   ~ 0
+MOSI_5V
+Text Label 3800 4000 2    39   ~ 0
+CS_5V
+Text Label 5100 4100 2    39   ~ 0
+RST_5V
+$Comp
+L Conn_01x05 J2
+U 1 1 5AF11055
+P 4000 4700
+F 0 "J2" H 4000 5000 50  0000 C CNN
+F 1 "Conn_01x05" H 4000 4400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 4000 4700 50  0001 C CNN
+F 3 "" H 4000 4700 50  0001 C CNN
+	1    4000 4700
+	1    0    0    -1  
+$EndComp
+Text Label 3800 4500 2    39   ~ 0
+DIO1
+Text Label 3800 4600 2    39   ~ 0
+DIO2
+Text Label 3800 4700 2    39   ~ 0
+DIO3
+Text Label 3800 4800 2    39   ~ 0
+DIO4
+Text Label 3800 4900 2    39   ~ 0
+DIO5
+$Comp
+L Conn_01x01 J4
+U 1 1 5AF11C5C
+P 7000 2750
+F 0 "J4" H 7000 2850 50  0000 C CNN
+F 1 "Conn_01x01" H 7000 2650 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7000 2750 50  0001 C CNN
+F 3 "" H 7000 2750 50  0001 C CNN
+	1    7000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5AF11E31
+P 7000 3050
+F 0 "J5" H 7000 3150 50  0000 C CNN
+F 1 "Conn_01x01" H 7000 2950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7000 3050 50  0001 C CNN
+F 3 "" H 7000 3050 50  0001 C CNN
+	1    7000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5AF11EE7
+P 7450 2750
+F 0 "J6" H 7450 2850 50  0000 C CNN
+F 1 "Conn_01x01" H 7450 2650 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7450 2750 50  0001 C CNN
+F 3 "" H 7450 2750 50  0001 C CNN
+	1    7450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J7
+U 1 1 5AF11EED
+P 7450 3050
+F 0 "J7" H 7450 3150 50  0000 C CNN
+F 1 "Conn_01x01" H 7450 2950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7450 3050 50  0001 C CNN
+F 3 "" H 7450 3050 50  0001 C CNN
+	1    7450 3050
+	1    0    0    -1  
+$EndComp
+Text Label 7100 4000 2    39   ~ 0
+MISO_3V3
+$EndSCHEMATC
