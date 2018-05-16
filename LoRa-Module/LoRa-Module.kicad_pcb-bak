@@ -90,7 +90,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Gerbers/))
+      (outputdirectory Gerbers/Gerbers_v3/))
   )
 
   (net 0 "")
